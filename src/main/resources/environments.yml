@@ -1,0 +1,5 @@
+- name: LOCAL
+  bootstrapServers: localhost:9092
+  urlSchemaRegistry: http://localhost:8081/
+  autoRegisterSchemas: true
+
