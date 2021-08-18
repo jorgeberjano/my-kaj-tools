@@ -6,7 +6,7 @@ import lombok.Getter;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MyEventProducer { //extends AbstractTestProducer<MyKey, MyEvent> {
+public class MyEventClient { //extends AbstractClient<MyKey, MyValue> {
 
   @Getter
   private final String defaultTopic = "TOPIC-NAME";
@@ -18,7 +18,7 @@ public class MyEventProducer { //extends AbstractTestProducer<MyKey, MyEvent> {
   @Getter
   private final String resourcesPath = "events/my-domain";
 
-  public MyEventProducer() {
-//    super(MyKey.class, MyEvent.class);
+  public MyEventClient() {
+//    super(MyKey.class, MyValue.class);
   }
 }
