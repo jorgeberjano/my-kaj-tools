@@ -90,8 +90,6 @@
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:19.0" level="project" />
     <orderEntry type="library" name="Maven: com.fifesoft:rsyntaxtextarea:3.1.1" level="project" />
-    <orderEntry type="library" name="Maven: com.github.json-template:jsontemplate:0.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.7" level="project" />
     <orderEntry type="library" name="Maven: net.logstash.logback:logstash-logback-encoder:6.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.graalvm.js:js:21.2.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.graalvm.regex:regex:21.2.0" level="project" />
@@ -99,5 +97,8 @@
     <orderEntry type="library" name="Maven: org.graalvm.sdk:graal-sdk:21.2.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.ibm.icu:icu4j:69.1" level="project" />
     <orderEntry type="library" name="Maven: org.graalvm.js:js-scriptengine:21.2.0" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.13.1" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest:2.2" level="project" />
   </component>
 </module>

@@ -1,8 +1,7 @@
 package org.demo.mykajtools;
 
 import es.jbp.kajtools.EnvironmentConfiguration;
-import es.jbp.kajtools.IConsumer;
-import es.jbp.kajtools.IProducer;
+import es.jbp.kajtools.IMessageClient;
 import es.jbp.kajtools.KajToolsApp;
 import es.jbp.kajtools.util.SchemaRegistryService;
 import java.awt.EventQueue;
@@ -14,13 +13,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootApplication(scanBasePackages = { "es.jbp.kajtools", "org.demo.mykajtools" })
+@SpringBootApplication(scanBasePackages = {"es.jbp.kajtools", "org.demo.mykajtools"})
 public class MyKajToolsApp extends KajToolsApp {
 
-  public MyKajToolsApp(@Autowired List<IProducer> producerList,
-      @Autowired List<IConsumer<?, ?>> consumerList,
+  public MyKajToolsApp(@Autowired List<IMessageClient> clientList,
       @Autowired SchemaRegistryService schemaRegistryService) {
-    super(producerList, consumerList, schemaRegistryService);
+    super(clientList, schemaRegistryService);
   }
 
   public static void main(String[] args) {
