@@ -35,7 +35,7 @@ public class MyKajToolsApp extends KajToolsApp {
 
     EventQueue.invokeLater(() -> {
       KajToolsApp kajToolsApp = ctx.getBean(KajToolsApp.class);
-      kajToolsApp.showWindow(args);
+      kajToolsApp.showWindow("My KAJ Tools", args);
     });
   }
 
