@@ -16,7 +16,7 @@ public class MyEventClient { //extends AbstractClient<MyKey, MyValue> {
       "OTHER-TOPIC-NAME");
 
   @Getter
-  private final String resourcesPath = "events/my-domain";
+  private final String resourcesPath = "jsons/my-domain";
 
   public MyEventClient() {
 //    super(MyKey.class, MyValue.class);

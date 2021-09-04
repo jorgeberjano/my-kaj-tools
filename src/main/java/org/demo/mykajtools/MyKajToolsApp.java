@@ -1,6 +1,6 @@
 package org.demo.mykajtools;
 
-import es.jbp.kajtools.EnvironmentConfiguration;
+import es.jbp.kajtools.configuration.Configuration;
 import es.jbp.kajtools.IMessageClient;
 import es.jbp.kajtools.KajToolsApp;
 import es.jbp.kajtools.util.SchemaRegistryService;
@@ -24,7 +24,7 @@ public class MyKajToolsApp extends KajToolsApp {
   public static void main(String[] args) {
 
     try {
-      EnvironmentConfiguration.loadEnvironmentConfig();
+      Configuration.load();
     } catch (IOException e) {
       System.err.println("Failed to load environment configuration");
     }

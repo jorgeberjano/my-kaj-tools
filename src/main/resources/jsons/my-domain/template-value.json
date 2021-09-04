@@ -1,0 +1,4 @@
+{
+  "initial": ${str(hello, " ", word)},
+  "six": ${ five + 1 }
+}
