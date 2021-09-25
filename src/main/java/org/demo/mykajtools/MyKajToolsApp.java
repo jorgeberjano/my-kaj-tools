@@ -7,6 +7,7 @@ import es.jbp.kajtools.util.SchemaRegistryService;
 import java.awt.EventQueue;
 import java.io.IOException;
 import java.util.List;
+import javax.swing.JFrame;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,8 +18,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class MyKajToolsApp extends KajToolsApp {
 
   public MyKajToolsApp(@Autowired List<IMessageClient> clientList,
-      @Autowired SchemaRegistryService schemaRegistryService) {
-    super(clientList, schemaRegistryService);
+      @Autowired SchemaRegistryService schemaRegistryService,
+      @Autowired JFrame mainFrame) {
+    super(clientList, schemaRegistryService, mainFrame);
   }
 
   public static void main(String[] args) {
@@ -35,7 +37,7 @@ public class MyKajToolsApp extends KajToolsApp {
 
     EventQueue.invokeLater(() -> {
       KajToolsApp kajToolsApp = ctx.getBean(KajToolsApp.class);
-      kajToolsApp.showWindow("My KAJ Tools", args);
+      kajToolsApp.showWindow("My KAJ Tools");
     });
   }
 
