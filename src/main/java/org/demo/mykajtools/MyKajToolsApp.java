@@ -8,6 +8,7 @@ import java.awt.EventQueue;
 import java.io.IOException;
 import java.util.List;
 import javax.swing.JFrame;
+import javax.swing.LookAndFeel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,10 +18,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication(scanBasePackages = {"es.jbp.kajtools", "org.demo.mykajtools"})
 public class MyKajToolsApp extends KajToolsApp {
 
-  public MyKajToolsApp(@Autowired List<IMessageClient> clientList,
-      @Autowired SchemaRegistryService schemaRegistryService,
-      @Autowired JFrame mainFrame) {
-    super(clientList, schemaRegistryService, mainFrame);
+  public MyKajToolsApp(
+      @Autowired JFrame mainFrame,
+      @Autowired LookAndFeel lookAndFeel) {
+    super(mainFrame, lookAndFeel);
   }
 
   public static void main(String[] args) {
