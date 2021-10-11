@@ -1,14 +1,10 @@
 package org.demo.mykajtools;
 
 import es.jbp.kajtools.configuration.Configuration;
-import es.jbp.kajtools.IMessageClient;
 import es.jbp.kajtools.KajToolsApp;
-import es.jbp.kajtools.util.SchemaRegistryService;
 import java.awt.EventQueue;
 import java.io.IOException;
-import java.util.List;
 import javax.swing.JFrame;
-import javax.swing.LookAndFeel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
